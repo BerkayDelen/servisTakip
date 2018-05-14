@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:maps="clr-namespace:Xamarin.Forms.Maps;assembly=Xamarin.Forms.Maps"
+             xmlns:local="clr-namespace:mapTest;assembly=mapTest"
+             x:Class="mapTest.mapTestPage">
+    <Label Text="Welcome to Xamarin Forms!" VerticalOptions="Center" HorizontalOptions="Center" />
+     <StackLayout Padding="20">
+        <Label x:Name="la" Text="la:" TextColor="Teal"  HorizontalOptions="Center" FontSize="25"></Label>
+    <Label x:Name="lo" Text="lo:" TextColor="Teal" HorizontalOptions="Center" FontSize="25"></Label>
+         <Label x:Name="label_Accuracy" Text="lo:" TextColor="Teal" HorizontalOptions="Center" FontSize="25"></Label>
+         <Label x:Name="label_Altitude" Text="lo:" TextColor="Teal" HorizontalOptions="Center" FontSize="25"></Label>
+         <Label x:Name="label_AltitudeAccuracy" Text="lo:" TextColor="Teal" HorizontalOptions="Center" FontSize="25"></Label>
+        <Label x:Name="label_Heading" Text="lo:" TextColor="Teal" HorizontalOptions="Center" FontSize="25"></Label>
+             <Label x:Name="label_Speed" Text="lo:" TextColor="Teal" HorizontalOptions="Center" FontSize="25"></Label>
+         <Label x:Name="label_Timestamp" Text="lo:" TextColor="Teal" HorizontalOptions="Center" FontSize="25"></Label>
+        <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+                    <Button Text="getlocation" Clicked="Handle_Clicked" FontSize="20" BackgroundColor="Silver" TextColor="White" HorizontalOptions="FillAndExpand"></Button>
+                            <Button Text="RUN" Clicked="Handle_Clicked_1" FontSize="20" BackgroundColor="Silver" TextColor="White" HorizontalOptions="FillAndExpand" ></Button>
+            <Button Text="Ekle" Clicked="Arac_Ekle" FontSize="20" BackgroundColor="Silver" TextColor="White" HorizontalOptions="FillAndExpand" ></Button>
+                        
+        </StackLayout>
+        <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+            <Button Text="Araclar" Clicked="AraclarList" FontSize="20" BackgroundColor="Silver" TextColor="White" HorizontalOptions="FillAndExpand" ></Button>
+        </StackLayout>
+
+        <Label x:Name="mes" Text=" " TextColor="Gray" HorizontalOptions="Center" FontSize="20"></Label>
+        <StackLayout>
+            
+            <WebView x:Name="Browser" WidthRequest="300" HeightRequest="200"/>
+            <!--<local:CustomMap x:Name="customMap" MapType="Street"
+          WidthRequest="300" HeightRequest="200"
+           />!-->
+
+        </StackLayout>
+    </StackLayout>
+   
+</ContentPage>

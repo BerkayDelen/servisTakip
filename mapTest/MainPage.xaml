@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="mapTest.MainPage">
+    <StackLayout>
+
+        <StackLayout  x:Name="HomeViewContent"   VerticalOptions="StartAndExpand" IsVisible="true">
+            <ListView x:Name="AraclarListview">
+                <ListView.ItemTemplate>
+                <DataTemplate>
+                    <ViewCell>
+                        <StackLayout BackgroundColor="#eee"
+                        Orientation="Vertical" Spacing="15">
+                            <StackLayout Orientation="Horizontal" Padding="15">
+                                <Image Source="{Binding image}" />
+                                <Label Text="{Binding Ad}"
+                                TextColor="#f35e20" />
+                                <Label Text="{Binding Plaka}"
+                                HorizontalOptions="EndAndExpand"
+                                TextColor="#503026" />
+                            </StackLayout>
+                        </StackLayout>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+       <WebView x:Name="Browser" HeightRequest="1000"
+        WidthRequest="1000"  IsVisible="false"  />
+
+
+        <!--<StackLayout Orientation="Horizontal" VerticalOptions="FillAndExpand">
+             <Button Text="Deneemez" VerticalOptions="Fill"   />
+             <Button Text="Deneemez" VerticalOptions="Fill"   />
+             <Button Text="Deneemez" VerticalOptions="Fill"   />
+            
+        </StackLayout>
+        !-->
+
+        <StackLayout Spacing="0"  x:Name="layout" Orientation="Horizontal" HeightRequest="90" VerticalOptions="EndAndExpand">
+
+           <StackLayout Spacing="0" VerticalOptions="FillAndExpand"
+        HorizontalOptions="FillAndExpand" >
+                <Image x:Name="HomeMenuImg" Source="homemenuiconon.png" VerticalOptions="FillAndExpand"
+        HorizontalOptions="FillAndExpand" HeightRequest="35"/>
+                <Button x:Name="HomeMenuText" Text="AnaSayfa" TextColor="#ff415b" BackgroundColor="Transparent" Clicked="HomeMenuItem"/>
+            </StackLayout>
+      <BoxView Color="#d6d6d6" WidthRequest="1" VerticalOptions="FillAndExpand"/>
+             <StackLayout Spacing="0" VerticalOptions="FillAndExpand"
+        HorizontalOptions="FillAndExpand" >
+                <Image x:Name="LocationMenuImg" Source="locaitonmenuiconoff.png" VerticalOptions="FillAndExpand"
+        HorizontalOptions="FillAndExpand" HeightRequest="35"/>
+                <Button x:Name="LocationMenuText" Text="Konumum" TextColor="#323542" BackgroundColor="Transparent" Clicked="LocationMenuItem"/>
+            </StackLayout>
+
+            <BoxView Color="#d6d6d6" WidthRequest="1" VerticalOptions="FillAndExpand"/>
+            <StackLayout Spacing="0" VerticalOptions="FillAndExpand"
+        HorizontalOptions="FillAndExpand" >
+                <Image x:Name="ProfileMenuImg" Source="profilemenuiconoff.png" VerticalOptions="FillAndExpand"
+        HorizontalOptions="FillAndExpand" HeightRequest="35"/>
+                <Button x:Name="ProfileMenuText" Text="Profil" TextColor="#323542" BackgroundColor="Transparent" Clicked="ProfileMenuItem"/>
+            </StackLayout>
+
+    </StackLayout>
+    </StackLayout>
+</ContentPage>

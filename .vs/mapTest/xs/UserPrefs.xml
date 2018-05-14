@@ -1,0 +1,24 @@
+﻿<Properties StartupConfiguration="{4710EBF1-5BA7-4E5E-BF01-46B479CB5F10}|Default">
+  <MonoDevelop.Ide.ItemProperties.mapTest.iOS PreferredExecutionTarget="MonoDevelop.IPhone.IPhoneSimulatorTarget.6FB6EFE6-E252-4558-A709-159F6AA49E3E">
+    <MonoDevelop.MacDev.AppleDevelopmentTeam />
+  </MonoDevelop.Ide.ItemProperties.mapTest.iOS>
+  <MonoDevelop.Ide.Workbench ActiveDocument="mapTest/MainPage.xaml.cs">
+    <Files>
+      <File FileName="mapTest/LoginRegisterPage.xaml" Line="20" Column="13" />
+      <File FileName="mapTest/LoginRegisterPage.xaml.cs" Line="95" Column="61" />
+      <File FileName="mapTest/MainPage.xaml" Line="3" Column="18" />
+      <File FileName="mapTest/MainPage.xaml.cs" Line="220" Column="27" />
+      <File FileName="mapTest/mapTestPage.xaml.cs" Line="115" Column="27" />
+      <File FileName="mapTest/Model/User.cs" Line="8" Column="3" />
+      <File FileName="mapTest/Model/Arac.cs" Line="26" Column="10" />
+      <File FileName="mapTest/Service/FirebaseServiceManager.cs" Line="67" Column="36" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.ItemProperties.mapTest.Droid PreferredExecutionTarget="Android.LGH8503a7e1415" AndroidDesignerPreferredTheme="Theme.DeviceDefault.NoActionBar.Fullscreen" />
+</Properties>

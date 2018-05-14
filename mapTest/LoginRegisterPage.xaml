@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage  BackgroundColor="#323542" 
+    xmlns="http://xamarin.com/schemas/2014/forms"
+              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+              x:Class="mapTest.LoginRegisterPage">
+    <StackLayout>
+
+        <StackLayout x:Name="RegisterLayout" Orientation="Vertical" Padding="25" IsVisible="False">
+            <Label Text="Kullanıcı Kayıt" FontSize="Large" TextColor="White" HorizontalOptions="Center"  HeightRequest="65"/>
+            <Image Source="mainImage.png" Margin="0,0,0,20"/>
+
+            <Entry  x:Name="Register_Name" TextColor="White" PlaceholderColor="White" Placeholder="Ad:"/>
+            <Entry  x:Name="Register_Surname" TextColor="White" PlaceholderColor="White" Placeholder="Soyad :" />
+            <Entry  x:Name="Register_UserName" TextColor="White" PlaceholderColor="White" Placeholder="Kullanıcı Adı :"/>
+            <Entry  x:Name="Register_Password" TextColor="White" PlaceholderColor="White" Placeholder="Şifre :" IsPassword="True"/>
+
+            <Button BackgroundColor="#0bd38a" Text="Kayıt Ol" TextColor="White" Clicked="Register" Margin="0,40,0,0"/>
+            <Button Text="Üye Girişi" Clicked="OpenLoginLayout" BackgroundColor="Transparent" TextColor="#ff415b"  />
+            
+
+        </StackLayout>
+
+        <StackLayout x:Name="LoginLayout" Orientation="Vertical" Padding="25" IsVisible="True">
+            <Label Text="Kullanıcı Girişi" FontSize="Large" TextColor="White" HorizontalOptions="Center"  HeightRequest="65"/>
+            <Image Source="mainImage.png" Margin="0,0,0,20"/>
+            
+            <Entry x:Name="lgn_UserName" TextColor="White" PlaceholderColor="White" Placeholder="Kullanıcı Adı :" Text="delenberkay"/>
+            <Entry x:Name="lgn_Password" TextColor="White" PlaceholderColor="White" Placeholder="Şifre :" IsPassword="True" Text="123"/>
+            
+            <Button BackgroundColor="#0bd38a" Text="Üye Girişi Yap" TextColor="White" Clicked="Login" Margin="0,40,0,0"/>
+            <Button Text="Kayıt Ol" Clicked="OpenRegisterLayout" BackgroundColor="Transparent" TextColor="#ff415b" />
+
+        </StackLayout>
+     </StackLayout>
+</ContentPage>
